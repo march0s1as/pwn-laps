@@ -56,7 +56,7 @@ func conx(host, dsname, senha, dsdc , dominio string, porta int) {
 			}
 			retirar := fmt.Sprintf(".%s", dominio)
 			retirar2 := strings.Replace(data[0], retirar, "",-1)
-			fmt.Printf("\n.: Username => %s\n.: Password => %s\n", retirar2, data[1])
+			fmt.Printf("\n.: Machine => %s\n.: Password => %s\n", retirar2, data[1])
 		} else{
 			fmt.Print("[")
 			color.Set(color.FgRed)
